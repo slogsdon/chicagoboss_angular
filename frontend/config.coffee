@@ -5,6 +5,7 @@ exports.config =
   modules:
     definition: false
     wrapper: false
+  # Point build files to the ChicagoBoss static folder
   paths:
     public: '../priv/static/'
   files:
@@ -21,16 +22,16 @@ exports.config =
           'app/styles/app.less'
         ]
 
-    templates:
-      joinTo: 
-        'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
+    # templates:
+    #   joinTo: 
+    #     'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
-  plugins:
-    jade:
-      pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
-    jade_angular:
-      modules_folder: 'partials'
-      locals: {}
+  # plugins:
+  #   jade:
+  #     pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
+  #   jade_angular:
+  #     modules_folder: 'partials'
+  #     locals: {}
 
   # Enable or disable minifying of result js / css files.
   # minify: true
